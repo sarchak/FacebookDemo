@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SettingCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="poL-B0-JlE">
+                        <rect key="frame" x="15" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eLT-Uv-wKp">
+                        <rect key="frame" x="263" y="6" width="51" height="31"/>
+                        <connections>
+                            <action selector="valueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="K02-D7-6ZD"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="poL-B0-JlE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="Isq-30-tFd"/>
+                    <constraint firstItem="poL-B0-JlE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="KPN-qF-caq"/>
+                    <constraint firstItem="eLT-Uv-wKp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="M0U-aI-WkR"/>
+                    <constraint firstAttribute="trailing" secondItem="eLT-Uv-wKp" secondAttribute="trailing" constant="8" id="O3H-g2-WCW"/>
+                    <constraint firstAttribute="centerY" secondItem="eLT-Uv-wKp" secondAttribute="centerY" id="PT2-WL-6DZ"/>
+                    <constraint firstItem="poL-B0-JlE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="aQF-N4-BLR"/>
+                    <constraint firstAttribute="centerY" secondItem="poL-B0-JlE" secondAttribute="centerY" id="aWC-BI-25M"/>
+                    <constraint firstItem="poL-B0-JlE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="g83-j7-7mO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="settingLabel" destination="poL-B0-JlE" id="ATk-vu-Xux"/>
+                <outlet property="settingSwitch" destination="eLT-Uv-wKp" id="fnI-6p-cbx"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
